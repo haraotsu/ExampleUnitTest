@@ -20,3 +20,5 @@ public class Main {
         System.out.println("戦闘終了");
     }
 }
+
+//https://github.com/haraotsu/ExampleUnitTest.git
