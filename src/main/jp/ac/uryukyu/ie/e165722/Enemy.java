@@ -1,9 +1,6 @@
 package jp.ac.uryukyu.ie.e165722;
 
 /**
- * Created by e165722 on 2016/11/15.
- */
-/**
  * 敵クラス。
  *  String name; //敵の名前
  *  int hitPoint; //敵のHP
@@ -66,7 +63,5 @@ public class Enemy {
             System.out.printf("モンスター%sは倒れた。\n", name);
         }
     }
-
-
 
 }

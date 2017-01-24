@@ -1,8 +1,4 @@
 package jp.ac.uryukyu.ie.e165722;
-
-/**
- * Created by e165722 on 2016/11/15.
- */
 /**
  * ヒーロークラス。
  *  String name; //敵の名前
