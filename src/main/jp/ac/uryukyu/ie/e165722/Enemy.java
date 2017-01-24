@@ -47,13 +47,13 @@ public class Enemy {
      */
     public void attack(Hero hero){
         int damage = (int)(Math.random() * attack);
-        if( hitPoint > 0 ) {
+        if( dead == false ) {
             System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, hero.getName(), damage);
+            hero.wounded(damage);
+        }else{
+
         }
-        else{
-            System.out.printf("モンスター%sは倒れた。\n", name);
-        }
-        hero.wounded(damage);
+
 
     }
 
@@ -66,6 +66,7 @@ public class Enemy {
         hitPoint -= damage;
         if( hitPoint < 0 ) {
             dead = true;
+            System.out.printf("モンスター%sは倒れた。\n", name);
         }
     }
 
